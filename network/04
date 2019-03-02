@@ -1,0 +1,1 @@
+netstat -nr | grep "default" | grep -e 1
