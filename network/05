@@ -1,1 +1,1 @@
-nslookup slash16.org | grep -e 3 | cut -d" " -f1 | grep -e 5 | cut -c 10-24
+nslookup slash16.org | grep 'Server' | awk '{print $2}'
