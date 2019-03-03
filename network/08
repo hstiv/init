@@ -1,2 +1,8 @@
 Amazon.com, Inc.
 found by https://hostingchecker.com/
+
+or u cat use commant 'host slash16.org'->'whois "address of slash16.org"'
+the output would be:
+
+Amazon Technologies Inc. AT-88-Z (NET-13-32-0-0-1) 13.32.0.0 - 13.47.255.255
+Amazon.com, Inc. AMAZO-CF (NET-13-32-0-0-2) 13.32.0.0 - 13.33.255.255
