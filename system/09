@@ -1,1 +1,1 @@
-ps auxwww | grep sshd | awk '{print }'
+ps auxwww | grep sshd | awk '{print $1}'
