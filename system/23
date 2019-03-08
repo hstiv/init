@@ -1,0 +1,6 @@
+By typing command su login to [root] (это все непосредстенно во время ssh);
+adduser [name]
+
+If u want delete, just type deluser [name]
+
+Before deleting yopurselfe, you shoul login as new user.
