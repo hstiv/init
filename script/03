@@ -1,0 +1,26 @@
+#!/bin/bash
+	date;
+	echo "uptime:"
+	uptime
+	echo "Currently connected:"
+	w
+	echo "---------------------"
+	echo "Last logins:"
+	last -a | head -3
+	echo "---------------------"
+	echo "Disk and memory usage:"
+	df -h | xargs | awk '{print "Free\total disk: " $11 "/" $9}'
+	free -m | xargs | awk '{print "Free/total memory: " $17 "/" $8 " M"}'
+	echo "---------------------"
+	start_log='head -1 /var/log/messages | cut -c 1-12'
+	oom='grep -ci kill /var/log/messages'
+	echo ""
+	echo "---------------------"
+	echo "Utilization and most expensive processes:"
+	top -b | head -3
+	echo "---------------------"
+#	echo "processes:"
+#	ps auxf --width=200
+#	echo "---------------------"
+	echo "vmstats:"
+	vmstat 1 5
