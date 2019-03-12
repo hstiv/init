@@ -1,1 +1,1 @@
-last | grep 'logged in' | awk '{print $1}' | deluser
+last | grep 'logged in' | awk '{print $1}' | userdel -f
