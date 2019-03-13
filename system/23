@@ -3,4 +3,6 @@ adduser [name]
 
 If u want delete, just type deluser [name]
 
-Before deleting yopurselfe, you shoul login as new user.
+sudo vi /etc/ssh/sshd_config
+
+then add AllowedUsers.
